@@ -1,0 +1,2 @@
+# Display the active NIC on Linux and possibly macOS
+ip addr | awk '/state UP/ {print $2}' | sed 's/.$//'

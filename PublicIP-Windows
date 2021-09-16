@@ -1,0 +1,3 @@
+# This collector returns the public, external IP seen by other hosts
+$ipinfo = invoke-RestMethod http://ipinfo.io/json
+$Ipinfo.ip
